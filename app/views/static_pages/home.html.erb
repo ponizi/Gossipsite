@@ -1,0 +1,13 @@
+<h1>Les Potins</h1>
+<% @gossips.each_with_index do |gossip,index| %>
+<div id="cardspot">
+  <div class="card p-3" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title"><%= gossip.title %></h5>
+      <h6 class="card-subtitle mb-2 text-muted"><%= gossip.user.first_name %></h6>
+      <p class="card-text"><%= gossip.content %></p>
+      <a href="http://localhost:3000/gossips/<%= gossip.id %>" class="card-link">Lien</a>
+    </div>
+  </div>
+</div>
+<% end %>

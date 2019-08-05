@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>PAGE POTIN</title>
+  </head>
+  <body>
+    <h1>PAGE POTIN</h1>
+    <p>Voici la page du potin n° <%= params[:id] %> <br/>
+    Son auteur : <a href="http://localhost:3000/users/<%= @gossips.find(params[:id]).user.id =%>"><%= @gossips.find(params[:id]).user.first_name =%> <%= @gossips.find(params[:id]).user.last_name =%><br/></a>
+    Le contenu du potin : <%= @gossips.find(params[:id]).content %> <br/>
+    Date : <%= @gossips.find(params[:id]).created_at =%>
+    <p><a href="http://localhost:3000">Lien pour revenir à la page des potins</a></p>
+  </body>
+</html>

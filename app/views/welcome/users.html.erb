@@ -1,0 +1,6 @@
+<h1><%= User.find(params[:id]).first_name =%> <%= User.find(params[:id]).last_name =%></h1>
+<p> Prénom : <%= User.find(params[:id]).first_name =%> </br>
+Nom : <%= User.find(params[:id]).last_name =%> </br>
+Age : <%= User.find(params[:id]).age =%> </br>
+Email : <%= User.find(params[:id]).email =%> </br>
+Description : <%= User.find(params[:id]).description =%> </br> </p>
