@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby version 2.5.1,
 
-Things you may want to cover:
+Télécharger le repo, unzip.
 
-* Ruby version
+Place-toi dans le terminal à la racine du dossier et entre les commandes suivantes :
+$bundle install
+$yarn install --check-files
+$rails db:migrate
+$rails db:seed
+$rails s -p 3000
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Welcome page adresse : http://localhost:3000/welcome/"ton_prénom"
